@@ -4,7 +4,6 @@ import Banner from "./components/Banner";
 import {useState} from "react";
 import satData from "./components/satData";
 
-
 function App() {
   const [sat, setSat] = useState(satData);
   const displaySats = [...new Set(satData.map((data) => data.orbitType))];
@@ -16,13 +15,13 @@ function App() {
   }
   return (
     <div>
+      <Banner />
       <Buttons 
         filterByType={filterByType}
         setSat={setSat}
         displaySats={displaySats}
       />
       <Table sat={sat} />
-      <Banner />
     </div>
 
   )

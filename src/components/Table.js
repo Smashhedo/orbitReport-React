@@ -19,7 +19,7 @@ const Table = ({ sat }) => {
           <td>{(data.operational === true) ? "active" : "inactive"}</td>
         </tr>
         
-        )};
+        )}
         </tbody>
       </table>
   );
