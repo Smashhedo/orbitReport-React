@@ -8,7 +8,7 @@ const Buttons = () => {
           </button>
         );
       })}
-      <button onClick ={() => satData: "setSat"}>All Orbits</button>
+      <button onClick ={() => setSat(satData)}>All Orbits</button>
       </div>
   );
 };
