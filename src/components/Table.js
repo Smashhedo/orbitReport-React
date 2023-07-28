@@ -1,4 +1,4 @@
-//import satData from "./satData";
+
 const Table = ({ sat }) => {
   return (
       <table>
@@ -16,9 +16,9 @@ const Table = ({ sat }) => {
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
-          <td>{data.orbitType}</td> 
+          <td>{(data.operational === true) ? "active" : "inactive"}</td>
         </tr>
-        (data.operational === true) ? "active" : "inactive"
+        
         )};
         </tbody>
       </table>
