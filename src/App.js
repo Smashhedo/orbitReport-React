@@ -13,6 +13,7 @@ function App() {
      return newSatDisplay.orbitType === currentType;
     });
     setSat(displaySats);
+  }
   return (
     <div>
       <Buttons 
@@ -24,7 +25,7 @@ function App() {
       <Banner />
     </div>
 
-  )}
+  )
 };
 
 export default App;
