@@ -1,3 +1,4 @@
+//import satData from "./satData";
 const Table = ({ sat }) => {
   return (
       <table>
@@ -10,9 +11,15 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
+        {sat.map((data, id) => 
         <tr>
-          <td>Row Data TBD</td>
+          <td>{data.name}</td>
+          <td>{data.type}</td>
+          <td>{data.launchDate}</td>
+          <td>{data.orbitType}</td> 
         </tr>
+        (data.operational === true) ? "active" : "inactive"
+        )};
         </tbody>
       </table>
   );
