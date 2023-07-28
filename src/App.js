@@ -2,7 +2,7 @@ import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 import Banner from "./Banner";
 import useState from "react";
-import satData.js from "./satData":
+import satData from "./satData";
 
 
 function App() {
@@ -27,6 +27,7 @@ const filterByType = (currentType) => {
      return newSatDisplay.orbitType === currentType;
   });
   setSat(displaySats);
+};
 };
 
 export default App;
