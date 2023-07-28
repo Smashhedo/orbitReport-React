@@ -1,4 +1,4 @@
-import satData from "./components/satData";
+import satData from "./satData";
 
 const Buttons = ({filterByType, setSat, displaySats}) => {
   return (
